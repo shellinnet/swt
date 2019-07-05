@@ -1,0 +1,2 @@
+
+<input  type="button" value="删除" onclick="javascript:if(confirm('确认删除吗?')){window.location.href='http://www.siwutang.vip/swtmanager/backend/web/index.php?r=teacher/delke&id=<?php echo $tid;?>&week=<?php echo $tezhouqi?>&duan=<?php echo $teduan?>&keid=<?php echo $tkeid?>';}else{window.location.href='http://www.siwutang.vip/swtmanager/backend/web/index.php?r=teacher/main';}"/> 

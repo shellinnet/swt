@@ -1,0 +1,54 @@
+
+            $(document).ready(function () {
+                
+                // Forgot Password Form Post Processing
+                $('.forgotSubmit').click(function() {
+                    var dataString = 'username=' + $("#forgotUsername").val();
+                    $.ajax({
+                        type: "POST",
+                        url: "/user/reset_password",
+                        data: dataString,
+                        success: function (response) {
+                            if (response.status == 'success') {
+                                $("#password-reset").html('We have sent you password reset instructions. Please check your email. ');
+                                $('#password-reset').delay(1000).fadeIn(1000).delay(8000).fadeOut(1000);
+                                $("#forgotPasswordForm").modal('hide');
+                            } else {
+                                $("#forgotPasswordForm .fixErrorsMsg").css('opacity', '1');
+                                $("#forgotPasswordForm .fixErrorsMsg").removeClass('hide');
+                                $("#forgotPasswordForm .fixErrorsMsg").html('Please enter a valid Username').fadeIn(1000).delay(3000).fadeOut(1000);
+                            }
+                        },
+                        error: function (response) {
+                            displayErrorModal(getErrorMessage(JSON.parse(response.responseText)), 'Please check your username and try again.');
+                        }
+                    });
+                });
+
+                // reset link form processing
+                $('#reset-password').click(function() {
+
+                    var data = {
+                        username: $("#username-reset").val(),
+                        password: $('#new-password').val(),
+                        password_confirmation: $('#new-password-confirmation').val(),
+                        token: $('#reset-token').val()
+                    };
+
+                    $.ajax({
+                        type: "POST",
+                        dataType: 'JSON',
+                        url: "/password/reset",
+                        data: data,
+                        success: function () {
+                            $('#resetPasswordForm').modal('hide');
+                            displaySuccessModal("Your password has been updated. You can now login.");
+                        },
+                        error: function (data) {
+                            displayErrorModal(getErrorMessage(JSON.parse(data.responseText)), 'Password reset was unsuccessful.');
+                        }
+                    });
+                });
+
+                            });
+     

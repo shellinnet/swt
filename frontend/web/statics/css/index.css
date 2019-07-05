@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* CSS Document */
+body,button,input,select,textarea {
+	font: 16px/1.5 "Microsoft YaHei" !important;
+	font-weight:bold;
+}
+
+.td {
+	color: #FFF;
+}
+
+ .user {color:#fff ; font: 12px/1.5 "Microsoft YaHei";}
+
+  .anniu{color:#f7c200 ; font: 10px/1.5 "Microsoft YaHei";background: #000;margin-top:20px;margin-left: :20px;}
+
+  .denglu{margin-top:30px;font: 14px/1.5 "Microsoft YaHei";}
+
+  .logintop{margin-top:10px;}
+  .beijing{background-color: #D1EEEE; }
+.ui-loginbar {
+
+	width: 100%;
+	height: 60px;
+	background-color: #ffffff;	
+	margin-top: 0 !important;
+		
+	transition:0.3s;
+}
+.ui-loginbar.on{top:0}
+
+.loginbar {
+	width: 100%;
+	height: 60px;
+	background-color: #ffffff;	
+	margin-top: -10px;
+
+}
+
+.na1{height:60px; width:100%; background:rgba(0,0,0,0); position:fixed; top:-100px; left:0; transition:0.3s; margin-top:0px;}
+.na1.on{top:0}
+
+.nav{height:60px; top:-100px; left:0;}
+.top{
+	margin-top:10px;
+	color:#000;
+	padding:0px 135px;
+	}
+.top li{
+	 text-decoration: none;  /*去掉li前面的圆点*/  
+     list-style: none;  
+     display: inline;/*让li横向排列*/
+	 float:left;	 
+	text-decoration:none;
+	}
+
+.ddtop{
+margin-top:0px;
+color:#000;
+padding:0px 135px;
+text-align:center;
+}
+.ddtop li{
+ text-decoration: none;  /*去掉li前面的圆点*/  
+ list-style: none;  
+ display: inline;/*让li横向排列*/
+ float:left;	 
+text-decoration:none;
+}
+.right{
+	color:#000000;
+	padding:20px 100px;
+}
+.right li{
+	 height:60px;
+	 text-decoration: none;  /*去掉li前面的圆点*/  
+     list-style: none;  
+     display: inline;/*让li横向排列*/
+	 float:right;	 
+	 text-decoration:none;
+	}
+.dh{
+	color: #000;
+	float: right;
+}
+.dh li{
+	 text-decoration: none;  /*去掉li前面的圆点*/    
+     display: inline;/*让li横向排列*/
+	 float:left;	 
+	 text-align:center;
+	 font-size:16px;	 	
+	padding:15px;
+	list-style-type:none;  
+	}
+a {
+	color: #666;
+    text-decoration: none;
+
+}
+
+a:hover {
+	color: #f7c200;
+	text-decoration: none
+}
+
+.dh li a {
+	display: block;
+	font-size: 16px
+}
+
+.dh li a.current {
+	color:#f7c200;
+
+}
+.gold{color:#f7c200;}
+
+.logo{
+	padding:15px 126px ;
+
+}
+.logoimg{
+	width:250px;
+	height:50px;
+}
+
+.logosmallimg{
+	width:200px;
+	height:60px;
+	vertical-align: middle;
+}
+.shiyongimg{
+
+	width:105px;
+	height:25px;
+}
+
+
+
+ *{ margin: 0; padding: 0;}
+        .banner{width: 1050px; height: 450px; position: relative; overflow: hidden; margin: 10px auto;}
+        .box{ width: 21000px; height: 450px; }
+        .box div{ float: left;}
+        .but div{
+				position: absolute;
+				top: 200px;
+				cursor: pointer;
+				padding: 5px 15px;
+				font-size: 18px;
+				background-color: rgba(102,215,255,0.5);
+				color: white;
+				z-index: 2;
+			}
+       /* .next{ right: 5px;}
+        .prev{ left: 5px;}*/
+        .Dots{ position: absolute; bottom: 20px; right: 50px;}
+        .Dots a{ padding: 1px 8px; background-color: rgba(102,215,255,0.7); margin-left: 8px; border-radius: 50%;}
+        .Dots a.active{ background-color: white;}
+.ui-linkbar {
+	width: 1150px;
+	height:50px;
+		
+}
+.down{
+	padding:15px 250px ;
+	color:#9a9a9a;
+	
+}
+.middle{ text-align:center; }
+
+.banner{width: 1050px; height: 450px; position: relative; overflow: hidden; margin: 20px auto;}
+.box{ width: 21000px; height: 450px; }
+.box div{ float: left;}
+.but div{ position: absolute; top: 200px; cursor: pointer; padding: 5px 15px; font-size: 15px; background-color: rgba(102,215,255,0.5); color: white; z-index: 2;}
+.next{ right: 5px;}
+.prev{ left: 5px;}
+.Dots{ position: absolute; bottom: 20px; right: 50px;}
+.Dots a{ padding: 1px 8px; background-color: rgba(102,215,255,0.7); margin-left: 8px; border-radius: 50%;}
+.Dots a.active{ background-color: white;}
+
+.hrefCont{
+            position: fixed;
+            top: 50%;
+            left: 230px;
+        }
+.hrefCont a{
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 2px;
+    text-align: center;
+    line-height: 20px;
+    border: 1px groove #000000;
+    cursor: pointer;
+    text-decoration: none;
+}
